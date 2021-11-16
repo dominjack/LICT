@@ -6,6 +6,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{anyfontsize}
+\usepackage[final]{graphicx}
 \usepackage{makecell}
 \usepackage{graphicx}
 \usepackage{float}
@@ -18,9 +19,6 @@
 \title{Laser-Induced Current Transient Technique}
 \begin{document}
 	\maketitle
-	\begin{center}
-	
-	\end{center}
 	\newpage
 	\tableofcontents
 	\newpage
@@ -32,5 +30,14 @@
 		\subsection{Electrode}
 		\subsection{LICT measurements}
 	\section{Measurement analysis}
+	In order to analyze the retrieved data, the peaks of the measured currents are being shown in figure \ref{PME} for three different pH values. In order to find the PME of the Electrode in each specific setup, a fit is applied to the data points. Additionally, the 
+	\begin{figure}[H]
+		\subfloat[]{\includegraphics[]{Au.01Mol.png}} 
+		\subfloat[]{\includegraphics[]{Au.1Mol.png}}\\\\\\
+		\subfloat[]{\includegraphics[]{Au1Mol.png}}
+		\subfloat[]{\includegraphics[width = .46\textwidth]{jvsEPHAu.png}} 
+		\caption{Measured peak currents shown against the applied Voltage for a polycrystalline gold Electrode (a,b,c). Figure (d) shows the pH sensitivity of the current curve against the Voltage. The zero-point of the Voltage is set to the RHE.}
+		\label{PME}
+	\end{figure}
 	\section{Conclusion}
 \end{document}
