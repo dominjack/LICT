@@ -1,0 +1,62 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{anyfontsize}
+\usepackage[final]{graphicx}
+\usepackage{makecell}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{url}
+\usepackage{adjustbox}
+\usepackage{svg}
+\usepackage{subcaption}
+\usepackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+\author{Niklas Arnold, Dominik Schiwietz, Simon Hofinger}
+\title{Laser-Induced Current Transient Technique}
+\begin{document}
+	\maketitle
+	\newpage
+	\tableofcontents
+	\newpage
+	\section{Abstract}
+	\section{Scientific Background}
+	\section{Experiment}
+		The following Experiment aims to measure the potential of zero charge  via the potential of maximum entropy. This is done by heating of the electric double layer and there fore introducing disarray into the dipole water layer. Measuring the current shows a change when the disorder causes the dipole field to reduce in strength. In the proximity of the potential of maximum entropy the water molecules are already in disarray and therefore don't change a lot by the introduction of heat. Directly a the potential of zero charge there is no change. To determine the influence of pH level on the potential of zero charge, three electrolytes of different acidity are used.
+		\subsection{Experimental set-up}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.4\textwidth]{Setup.png}			
+				\caption{Electrochemical  glass  cell  used in this experiment 1. preconditioning compartment, 2. working compartment, WE working electrode, CE counter electrode, RE reference electrode \protect \footnotemark}
+				\label{fig:setup}
+			\end{figure}
+			\footnotetext{https://www.ph.tum.de/academics/org/labs/fopra/docs/userguide-22.en.pdf Prof. Dr. Aliaksandr Bandarenka p.10 5.12.2021}
+			The Experiment is conducted in a custom build electrochemical glass cell using three electrodes. This is  reduces measurement errors by having the reference electrode determine the potential of the solution. The heating of the electric double layer is done via a laser which while having a original wavelength of 532nm is elongated by a attenuator to avoid damaging the working electrode. The precognition chamber allows the electrolyte to be purged of oxygen with Argon. 
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\textwidth]{FullSetup.png}			
+				\caption{Setup of the measurement instruments \protect \footnotemark}
+				\label{fig:fullsetup}
+			\end{figure}
+			\footnotetext{https://www.ph.tum.de/academics/org/labs/fopra/docs/userguide-22.en.pdf Prof. Dr. Aliaksandr Bandarenka p.10 5.12.2021}
+		\subsection{Electrolyte}
+			The electrolyte is prepared with a $70\%$ Perchloric acid  solution ($\text{HClO}_4$) which is diluted in water to archive the necessary pH of 0, 1 and 2.  Since Percloric acid is very strong with a acid dissociation constant $\text{p}K_a = -15.2\pm 2.0$ it completely disassociates. Therefore the three needed solutions can be created by dissolving it in 37.8,387,3879 mol of water.
+		\subsection{Electrode preperation}
+			The electrode was flame annealed with isobutylene and cooled in a mixture of CO and Ar. This reduces the amount of crystalline defects in the surface. This was afterwards inspected in a Ar saturated 0.1 M $\text{HClO}_4$ solution.
+		\subsection{LICT measurements}
+			The measurements are conducted at a Voltage range of 0.05 - 1.00V in relation to the electrode with increase of 20mV. The Data is collected via a electrochemical quartz crystal microbalance (cf. \ref{fig:fullsetup}) which is linked to a computer, that logs the measurement.
+	\section{Measurement analysis}
+	In order to analyze the retrieved data, the peaks of the measured currents are being shown in figure \ref{PME} for three different pH values. In order to find the PME of the Electrode in each specific setup, a fit is applied to the data points. Additionally, the 
+	\begin{figure}[H]
+		\subfloat[]{\includegraphics[]{Au.01Mol.png}} 
+		\subfloat[]{\includegraphics[]{Au.1Mol.png}}\\\\\\
+		\subfloat[]{\includegraphics[]{Au1Mol.png}}
+		\subfloat[]{\includegraphics[width = .46\textwidth]{jvsEPHAu.png}} 
+		\caption{Measured peak currents shown against the applied Voltage for a polycrystalline gold Electrode (a,b,c). Figure (d) shows the pH sensitivity of the current curve against the Voltage. The zero-point of the Voltage is set to the RHE.}
+		\label{PME}
+	\end{figure}
+	\section{Conclusion}
+\end{document}
